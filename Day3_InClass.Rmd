@@ -1,6 +1,6 @@
 ---
 title: 'RMarkdown:  In Class Assignment'
-author: "YOUR NAME HERE"
+author: "Joseph Godinez"
 date: "Data 2401"
 output: 
   html_document:
@@ -40,9 +40,35 @@ Reminders:
   - An example of their writing or lyrics (formatted in a *block of text*);   
   - A _list_ of things they have written or performed (remember to use the formatting markup for a list!), with any of the titles/names in bold.     
 
+# . Wise Words
+  >"The best way out is through" [link](https://quoteinvestigator.com/2025/06/30/way-out/)
+  
+# . I recommend
+I recommend Post malone as a great artist, singer and songwriter, this talent expands to different genres such as country music, pop, rap, hip hop and more.
+
+##  Post Malone
+```{r eval=TRUE, echo=FALSE}
+paste("Got a hundred big faces, but I am still alone")
+```
+
+### Post Malone's generes and their popular songs
+
+* **Country:**
+  + What don't belong to me
+  + Wrong ones
+  + Finer things
+* **Pop:**
+  + Sign me up
+  + Chemical
+  + One more time
+* **Hip Hop:**
+  + Better Now
+  + Rock star
+  + White Iverson
+
 # Part 2: Code Chunks
 
-```{r}
+```{r echo=TRUE}
 2 + 2
 ```
 
@@ -53,9 +79,13 @@ Complete the following steps:
 - Knit the document again.
 - Finally, write 2–3 sentences answering the following questions:
   - What changed between the two outputs?
+    + **When echo=TRUE is changed to echo=FALSE, the gray code block (2+2) dissapears when knitted, but the result remains the same and we can still see it in the HTML file**
   - Did the calculation still run when the code was hidden?
+    + **Yes, it still runs , because echo=FALSE only hides the code not the final result**
   - Why might someone want to hide code in a report?
+    + **People would oftentimes hide the code to create a more professional file that allows general audience have access to the information**
   - Why might someone want to show code in a report?
+    + **Because in that case, they might show it to people with knowledge on the computing set up of the data and to ensure that the data was processes correctly**
   
 # Part 3: A small R-in-markdown preview
 
@@ -66,7 +96,12 @@ Complete the following steps:
 > To include inline code, use this weird little `r 2+2` pattern, putting the code where I have 2+2 (which is code!) 
 > You can use the function `Sys.Date()`, which would be added like this `r Sys.Date()` but you can do something else if you want. (Look at the knit html to see what this does.)
 
- 
+## About this document:
+This document allows u to extract a repository from git, allowing us to makes formatting changes, run codes for different calculations, create detailed lists and table to organize data, to teach us proper formatting to interpret sets of data and overall create a very well documented file that contains all the methods and coding sections utilized to interpret the data and convert it into a HTML file that is accessible to easy to comprehend for the general audience. 
+
+Today's date: `r Sys.Date()`
+
+The result of the above calculation 2+2 is: `r 2+2`
 
 # Submitting Instructions
 
